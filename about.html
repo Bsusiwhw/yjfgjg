@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="carousel.css">
+    
+    
+    <title>About</title>
+    <style>
+        
+        @font-face {
+        font-family: "GothamBook";
+        src: url("https://irp.cdn-website.com/c2b0e68c/fonts/GothamBook-360_400.ttf");
+        font-weight: 400;
+        font-style: normal;
+        }
+        
+        .navbar {
+            width: 100%;
+            font-family: GothamBook;  
+            color: #000000; /* Remove margin from the navbar */
+        }
+        .navbar-nav .nav-link {
+            color: #0d6efd;
+            border-radius: 40px;
+            padding: 5px 20px; /* Change text color to black */
+            border: 1px;
+            
+        }
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 10px;
+            }
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #0d6efd;
+            color: rgb(255, 255, 255);
+        }
+        .navbar-brand img {
+            max-height: 45px;
+        }
+        @media (min-width: 1200px) {
+            .navbar-brand img {
+                max-height: 60px;
+                width: auto;
+                /* Ensure the width adjusts proportionally */
+            }
+        }    
+        header{
+            display: flex;
+            align-items: center;
+            
+            justify-content: space-between;
+        }  
+        .footer{
+            height: 300px;
+            background: linear-gradient(181deg, rgba(97,149,219,1) 0%, rgba(2,0,97,1) 67%);
+            color: white;
+            padding: 20px;
+        }
+        .divs{
+            display: flex;
+        }
+        .address{
+            padding-left: 20px;
+        }
+        .email{
+            padding-left: 20px;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+            padding-top: 10px;
+        }
+        .logo{
+            max-height: 40px;
+        }
+        @media (min-width: 1021px){
+            .navbar-brand img {
+                max-height: 60px;
+                width: auto;
+                /* Ensure the width adjusts proportionally */
+            }
+            header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1vw;
+        }
+        .title {
+            position: relative;
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("abg1.png");
+            background-size: cover;
+            filter: brightness(50%);
+        }
+
+        h1 {
+            position: relative;
+            color: #ffffff;
+            border: solid #fff;  
+            font-size: 60px;
+            text-align: center;
+            padding: 10px 20px;
+            font-family: GothamBook;  
+            z-index: 1; /* Ensure the text appears in front of the background */
+        }
+
+        .double-razor::before,
+        .double-razor::after {
+            position: absolute;
+            content: "";
+            width: 1000px; /* Adjusted width */
+            height: 10px;
+            box-shadow: 
+                0 -2px 0 rgb(255, 255, 255),
+                0 2px 0 rgb(255, 255, 255);
+            top: 50%;
+            transform: translateY(-100%);
+        }
+
+        .double-razor::before {
+            right: 105%; /* Adjusted right position */
+        }
+
+        .double-razor::after {
+            left: 105%; /* Adjusted left position */
+        
+            /* div222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
+        }
+        .div2{
+            height: auto;
+            font-family: GothamBook; 
+        }
+        .div2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .intro {
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 1.3vw;
+            text-align: justify;
+            font-family: GothamBook;    
+        }
+        .in{
+            font-size: 2vw;
+            font-family: GothamBook; 
+            margin-top: 20px;
+        }
+
+        .intro ul {
+            list-style-type: none;
+            padding-left: 0;
+            
+        }
+
+        .intro ul li {
+            margin-bottom: 5px;
+        }
+
+
+         /* div33333333333333333333333333333333333333333333333333333333333333333333333333 */
+        .main_container{
+            margin: 6% 0 0 36%;
+            position: relative;
+            width: 25%;
+        }
+        .image{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+        .main_container:hover .overlay{
+            height: 100%;
+        }
+        .p1{
+            width: 100%;
+            color: #fff;
+            font-size: 1vw;
+            position: absolute;
+            text-align: center;
+      
+        }
+
+    }
+
+            
+
+            
+
+    
+        
+       
+ </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a href="test2.html" class="navbar-brand">
+                    <img src="logo.png" alt="Logo" class="d-inline-block align-text-top me-2 img-fluid">
+                </a>
+
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto  fw-bold">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Permits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Accreditation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Policies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Calibration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PM and Validation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <div class="title">
+            <div class="background-image"></div>
+            <h1 class="divider line double-razor"><strong>About Us</strong></h1>
+        </div>
+        
+        <div class="div2">
+            <div class="intro">
+                <h2 class="in"><strong>Introduction</strong></h2>
+                <p>Southern Metrology and Calibration Services, Inc. is a reputable ISO/IEC 17025:2017 accredited calibration laboratory, located at Artica Building, National Highway corner Almazora Street, Canlalay, Binan City, Laguna. Established in 2015, we have quickly become a trusted name in the industry, offering comprehensive metrology and calibration services to customers across various sectors. As the calibration laboratory in the Philippines to be accredited by the Philippine Accreditation Bureau for ISO/IEC 17025:2017, we have a track record of delivering exceptional quality and accuracy. With our customer-centric approach, state-of-the-art facilities, and a highly knowledgeable staff, we guarantee top-notch performance and professional quality services.</p>
+            </div>       
+        </div>
+        <div class="div3">
+            <div class="main_container">
+                <img src="abg3.webp" class="image">
+                <div class="overlay">
+                    <p class="p1">We specialize in providing precise and reliable metrology and calibration services tailored to the specific needs of our customers. With a wide scope of accreditation, we offer calibration services in diverse fields, including thermometry, hydrometry, mass, balances, force, pressure, torque, analytical, environmental, volume, dimensional, electrical, frequency, density, and viscosity. Our services ensure that your measurement procedures meet the highest quality standards, providing you with confidence and accuracy in your processes.</p>
+                </div>
+            </div>
+        </div>
+            
+
+
+
+
+
+    <div class="footer">
+            <h3>Contact Us
+                <img src="logo.png" alt="Logo" class="logo d-inline-block align-text-top me-2 img-fluid bg-white">
+            </h3>
+            <div class="separator">
+                <div id="separator-5435933ece" class="cmp-separator">
+                    <hr class="cmp-separator__horizontal-rule">
+                </div>
+            </div>
+            <div class="divs">
+            <t class="contact"><strong>Contact Details</strong><br>Sales Department<br>Globe: 0945 408 2266<br>Sun: 0925 503 1523<br>Manila Line: (02) 8533 0162<br>Laguna Line: (049) 511 8177</t>
+            <t class="address"><strong>Office Address</strong><br>	
+                Artica Building, National Highway corner Almazora Street,<br> Canlalay, Biñan City 4024, Laguna, Philippines</t>
+            <t class="email"><strong>Email Address</strong><br>	
+                info@southerncalibration.com<br>southerncalab@gmail.com</t>
+        </div>
+        <div class="separator">
+            <div id="separator-5435933ece" class="cmp-separator">
+                <hr class="cmp-separator__horizontal-rule">
+            </div>
+        </div>
+        <div class="copyright">AN ISO/IEC 17025:2017 ACCREDITED CALIBRATION LABORATORY<br>Copyright ©  2018  All Rights Reserved. Southern Metrology and Calibration Services, Inc.</div>
+        </div>
+    
+   
+
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

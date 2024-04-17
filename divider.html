@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+.divider {
+  display: flex;
+  
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+  
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+
+ 
+  .double-razor {
+    &:before,
+    &:after {
+      height: 10px;
+      box-shadow: 
+        0 -1.5px 0 rgb(184, 13, 13),
+        0 0.5px 0 black;
+border: solid rgb(223, 235, 11);
+      border-width: 0;
+    }
+  }
+
+
+
+    </style>
+</head>
+<body>
+
+
+<h2 class="divider line double-razor" contenteditable>Double 0.5px</h2>
+
+
+</body>
+</html>
