@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'><link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="carousel.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
-    <title>About</title>
+    <title>Southern Metrology & Calibration Services Inc.</title>
     <style>
-        
         @font-face {
         font-family: "GothamBook";
         src: url("https://irp.cdn-website.com/c2b0e68c/fonts/GothamBook-360_400.ttf");
         font-weight: 400;
         font-style: normal;
         }
-        
+
         .navbar {
             width: 100%;
-            font-family: GothamBook;  
+            font-family: 'Montserrat';
             color: #000000; /* Remove margin from the navbar */
         }
+
         .navbar-nav .nav-link {
             color: #0d6efd;
             border-radius: 40px;
@@ -30,36 +35,399 @@
             border: 1px;
             
         }
-        @media (max-width: 768px) {
-            .nav-link {
-                font-size: 10px;
-            }
-        }
+       
         .navbar-nav .nav-link:hover {
             background-color: #0d6efd;
             color: rgb(255, 255, 255);
         }
+
+        /* Adjust logo size for smaller devices */
         .navbar-brand img {
             max-height: 45px;
         }
-        @media (min-width: 1200px) {
+
+        @media only screen and (min-width: 1401px) {
             .navbar-brand img {
                 max-height: 60px;
                 width: auto;
                 /* Ensure the width adjusts proportionally */
             }
-        }    
-        header{
+            header{
             display: flex;
             align-items: center;
-            
             justify-content: space-between;
-        }  
+            font-size: 1vw;
+        }
+        .brr{
+            display:none;
+        }
+      
+                .title {
+            position: relative;
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-image {
+       
+            position: absolute;
+            background-attachment: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("abg1.png");
+            background-size: cover;
+            filter: brightness(50%);
+        }
+
+        h1 {
+            position: relative;
+            color: #ffffff;
+            border: solid #fff;  
+            font-size: 4vw;
+            text-align: center;
+            padding: 10px 20px;
+            font-family: 'Poppins';  
+            z-index: 1; /* Ensure the text appears in front of the background */
+        }
+
+        .double-razor::before,
+        .double-razor::after {
+            position: absolute;
+            content: "";
+            width: 1000px; /* Adjusted width */
+            height: 14px;
+            box-shadow: 
+                0 -2px 0 rgb(255, 255, 255),
+                0 2px 0 rgb(255, 255, 255);
+            top: 50%;
+            transform: translateY(-100%);
+        }
+
+        .double-razor::before {
+            right: 105%; /* Adjusted right position */
+        }
+
+        .double-razor::after {
+            left: 105%; /* Adjusted left position */
+        }
+         /* 2nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+         .div2{
+            text-align: center;
+            margin: 100px 200px;
+            font-family: 'Poppins';
+   
+        }
+        h2{
+            font-family: 'Poppins';
+            margin: 20px 200px;
+            font-size: 30px;
+        }
+        p2{
+            font-size: 20px;
+        }
+
+
+        /* 3rddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .c-item {
+            height: 35vh;
+            object-fit: cover; 
+            padding: 4.2%;
+            text-align: center;
+             
+        }
+        .h {
+            font-family: 'Poppins';  
+            color: #000000;          
+            font-size: 40px; 
+
+        }
+        .t { 
+            font-family: 'Poppins';  
+            color: #000000;
+            font-size: 30px;
+            font-style: italic;
+        }
+        .carousel-indicators{
+            margin-bottom: 0px;
+        }
+        
+         /* 4thhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
         .footer{
-            height: 300px;
-            background: linear-gradient(181deg, rgba(97,149,219,1) 0%, rgba(2,0,97,1) 67%);
+            height: auto;
+            background: rgb(0, 0, 0);
             color: white;
             padding: 20px;
+            font-family: GothamBook;  
+        }
+        .fa-brands{
+            font-size: 40px;
+            padding-left: 1500px;
+        }
+        .divs{
+            display: flex;
+            font-size: 1vw;
+        }
+        .address{
+            padding-left: 8vw;
+        }
+        .email{
+            padding-left: 8vw;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+            padding-top: 10px;
+            height: auto;
+        }
+        .logo{
+            max-height: 40px;
+        }
+        }
+
+
+
+       /* LAPTOPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
+        @media only screen and (min-width: 1031px) and (max-width: 1400px) {
+            .navbar-brand img {
+                max-height: 60px;
+                width: auto;
+                /* Ensure the width adjusts proportionally */
+            }
+            header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1vw;
+        }
+      
+                .title {
+            position: relative;
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .brr{
+            display:none;
+        }
+
+        .background-image {
+       
+            position: absolute;
+            background-attachment: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("abg1.png");
+            background-size: cover;
+            filter: brightness(50%);
+        }
+
+        h1 {
+            position: relative;
+            color: #ffffff;
+            border: solid #fff;  
+            font-size: 4vw;
+            text-align: center;
+            padding: 10px 20px;
+            font-family: GothamBook;  
+            z-index: 1; /* Ensure the text appears in front of the background */
+        }
+
+        .double-razor::before,
+        .double-razor::after {
+            position: absolute;
+            content: "";
+            width: 1000px; /* Adjusted width */
+            height: 14px;
+            box-shadow: 
+                0 -2px 0 rgb(255, 255, 255),
+                0 2px 0 rgb(255, 255, 255);
+            top: 50%;
+            transform: translateY(-100%);
+        }
+
+        .double-razor::before {
+            right: 102%; /* Adjusted right position */
+        }
+
+        .double-razor::after {
+            left: 102%; /* Adjusted left position */
+        }
+         /* 2nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .div2{
+            text-align: center;
+            margin: 100px 200px;
+            font-family: 'Poppins';
+        }
+        h2{
+            font-family: 'Poppins';
+            margin: 20px 200px;
+            font-size: 20px;
+        }
+
+
+        /* 3rddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .c-item {
+            height: 50vh;
+            object-fit: cover; 
+            padding: 4.2%;
+            text-align: center;
+             
+        }
+        .h {
+            font-family: 'Poppins';  
+            color: #000000;          
+            font-size: 3vw; 
+
+        }
+        .t { 
+            font-family: 'Poppins';  
+            color: #000000;
+            font-size: 2vw;
+            font-style: italic;
+        }
+        .carousel-indicators{
+            margin-bottom: 0px;
+        }
+        
+        
+         /* 4thhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+        
+        .footer{
+            
+            height: auto;
+            background: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            font-family: GothamBook;  
+        }
+        h3{
+            display: flex;
+        }
+        .fa-brands{
+            font-size: 40px;
+            padding-left: 850px;
+        }
+        .divs{
+            display: flex;
+            font-size: 1vw;
+        }
+        .address{
+            padding-left: 8vw;
+        }
+        .email{
+            padding-left: 8vw;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+            padding-top: 10px;
+            height: auto;
+        }
+        .logo{
+            max-height: 40px;
+        }
+        }
+        
+
+       /* CPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
+        @media only screen and (max-width: 500px) {
+            header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+      
+        .title {
+            position: relative;
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-image {
+       
+            position: absolute;
+            background-attachment: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("abg1.png");
+            background-size: cover;
+            filter: brightness(50%);
+        }
+        h1 {
+            position: relative;
+            color: #ffffff;  
+            font-size: 40px;
+            line-height: 1.5;
+            text-align: center;
+            border: solid rgba(255, 255, 255, 0.702);
+            padding: 8px;
+            font-family: GothamBook;  
+        }
+        .div2{
+            text-align: center;
+            margin: 30px 24px;
+            font-family: 'Poppins';
+   
+        }
+        h2{
+            font-family: 'Poppins';
+            margin: 20px 20px 10px 20px;
+            font-size: 18px;
+        }
+        p2{
+            font-size: 10px;
+        }
+
+
+        /* 3rddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .c-item {
+            height: 25vh;
+            object-fit: cover; 
+            padding: 4.2%;
+            text-align: center;
+             
+        }
+        .h {
+            font-family: 'Poppins';  
+            color: #000000;          
+            font-size: 18px; 
+
+        }
+        .t { 
+            font-family: 'Poppins';  
+            color: #000000;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .carousel-indicators{
+            margin-bottom: 0px;
+        }
+        
+
+        .footer{
+            height: auto;
+            background: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            font-family: GothamBook;   
+        }
+        .fa-brands{
+            font-size: 15px;
+            padding-left: 190px;
         }
         .divs{
             display: flex;
@@ -78,21 +446,58 @@
         .logo{
             max-height: 40px;
         }
-        @media (min-width: 1021px){
-            .navbar-brand img {
-                max-height: 60px;
-                width: auto;
-                /* Ensure the width adjusts proportionally */
-            }
+        .nav-link {
+            font-size: 10px;
+        }
+        .title {
+            height: 420px;
+            width: 100%;
+        }
+
+        .title::before {
+            height: auto;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .h2 {
+        
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+
+        .contact,
+        .address,   
+        .email{
+            font-size: 1.5vw;
+        }
+
+        .con{
+            font-size: 10px;
+        }
+        .logo{
+            max-height: 15px;
+        }
+        .copyright{
+            font-size: 1.2vw;
+            margin-top: 0px;
+        }
+        }
+
+               /* landdscapeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+               @media only screen and (min-width: 501px) and (max-width: 699px)  {
             header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 1vw;
         }
+      
         .title {
             position: relative;
-            height: 60vh;
+            height: 85vh;
             width: 100%;
             display: flex;
             align-items: center;
@@ -100,7 +505,9 @@
         }
 
         .background-image {
+       
             position: absolute;
+            background-attachment: fixed;
             top: 0;
             right: 0;
             bottom: 0;
@@ -109,120 +516,251 @@
             background-size: cover;
             filter: brightness(50%);
         }
-
         h1 {
             position: relative;
-            color: #ffffff;
-            border: solid #fff;  
-            font-size: 60px;
+            color: #ffffff;  
+            font-size: 40px;
+            line-height: 1.5;
             text-align: center;
-            padding: 10px 20px;
+            border: solid rgba(255, 255, 255, 0.702);
+            padding: 8px;
             font-family: GothamBook;  
-            z-index: 1; /* Ensure the text appears in front of the background */
         }
 
-        .double-razor::before,
-        .double-razor::after {
-            position: absolute;
-            content: "";
-            width: 1000px; /* Adjusted width */
-            height: 10px;
-            box-shadow: 
-                0 -2px 0 rgb(255, 255, 255),
-                0 2px 0 rgb(255, 255, 255);
-            top: 50%;
-            transform: translateY(-100%);
-        }
-
-        .double-razor::before {
-            right: 105%; /* Adjusted right position */
-        }
-
-        .double-razor::after {
-            left: 105%; /* Adjusted left position */
-        
-            /* div222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
-        }
         .div2{
-            height: auto;
-            font-family: GothamBook; 
+            text-align: center;
+            margin: 30px 50px;
+            font-family: 'Poppins';
+   
         }
-        .div2 {
+        h2{
+            font-family: 'Poppins';
+            margin: 20px 20px 10px 20px;
+            font-size: 18px;
+        }
+        p2{
+            font-size: 10px;
+        }
+
+
+        /* 3rddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .c-item {
+            height: 150px;
+            object-fit: cover; 
+            padding: 4.2%;
+            text-align: center;
+             
+        }
+        .h {
+            font-family: 'Poppins';  
+            color: #000000;          
+            font-size: 18px; 
+
+        }
+        .t { 
+            font-family: 'Poppins';  
+            color: #000000;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .carousel-indicators{
+            margin-bottom: 0px;
+        }
+        
+
+        .footer{
+            height: auto;
+            background: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            font-family: GothamBook;   
+        }
+        .fa-brands{
+            font-size: 20px;
+            padding-left: 500px;
+        }
+        .divs{
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding-bottom: 0px;
-            padding-top: 0px;
         }
-
-        .intro {
-            padding-right: 20px;
+        .address{
             padding-left: 20px;
-            font-size: 1.3vw;
-            text-align: justify;
-            font-family: GothamBook;    
         }
-        .in{
-            font-size: 2vw;
-            font-family: GothamBook; 
-            margin-top: 20px;
+        .email{
+            padding-left: 20px;
         }
-
-        .intro ul {
-            list-style-type: none;
-            padding-left: 0;
-            
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+            padding-top: 10px;
         }
-
-        .intro ul li {
-            margin-bottom: 5px;
+        .logo{
+            max-height: 40px;
         }
-
-
-         /* div33333333333333333333333333333333333333333333333333333333333333333333333333 */
-        .main_container{
-            margin: 6% 0 0 36%;
-            position: relative;
-            width: 25%;
+        .nav-link {
+            font-size: 10px;
         }
-        .image{
-            display: block;
+        .title {
+            height: 420px;
             width: 100%;
+        }
+
+        .title::before {
             height: auto;
         }
-        .overlay{
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .h2 {
+        
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+
+        .contact,
+        .address,   
+        .email{
+            font-size: 1.5vw;
+        }
+
+        .con{
+            font-size: 10px;
+        }
+        .logo{
+            max-height: 15px;
+        }
+        .copyright{
+            font-size: 1.2vw;
+            margin-top: 0px;
+        }
+
+        }
+
+
+         /* TABLETTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+         @media only screen and (min-width: 700px) and (max-width: 1030px) {
+            .navbar-brand img {
+                height: 60px;
+                width: auto;
+                /* Ensure the width adjusts proportionally */
+            }
+            header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+      
+        .title {
+            position: relative;
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-image {
+       
             position: absolute;
+            background-attachment: fixed;
+            top: 0;
+            right: 0;
             bottom: 0;
             left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.75);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            transition: .5s ease;
+            background-image: url("abg1.png");
+            background-size: cover;
+            filter: brightness(50%);
         }
-        .main_container:hover .overlay{
-            height: 100%;
+        h1 {
+            position: relative;
+            color: #ffffff;  
+            font-size: 40px;
+            line-height: 1.5;
+            text-align: center;
+            border: solid rgba(255, 255, 255, 0.702);
+            padding: 8px;
+            font-family: GothamBook;  
         }
-        .p1{
-            width: 100%;
-            color: #fff;
-            font-size: 1vw;
-            position: absolute;
+         /* 2nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+         .div2{
+            text-align: center;
+            margin: 30px 80px;
+            font-family: 'Poppins';
+   
+        }
+        h2{
+            font-family: 'Poppins';
+            margin: 20px 20px 10px 20px;
+            font-size: 18px;
+        }
+        p2{
+            font-size: 10px;
+        }
+
+
+        /* 3rddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+        .c-item {
+            height: 200px;
+            object-fit: cover; 
+            padding: 4%;
             text-align: center;
       
         }
+        .h {
+            font-family: 'Poppins';  
+            color: #000000;          
+            font-size: 18px; 
 
-    }
-
+        }
+        .t { 
+            font-family: 'Poppins';  
+            color: #000000;
+            font-size: 12px;
+            font-style: italic;
             
-
-            
-
-    
+        }
+        .carousel-indicators{
+            margin-bottom: 0px;
+        }
         
-       
+        
+         /* 4thhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+ 
+        .footer{
+            height: auto;
+            background: black;
+            color: white;
+            padding: 20px;
+            font-family: 'Poppins';
+        }
+        .fa-brands{
+            font-size: 40px;
+            padding-left: 350px;
+        }
+        .divs{
+            display: flex;
+            font-size: 1.2vw;
+        }
+        .address{
+            padding-left: 8vw;
+        }
+        .email{
+            padding-left: 8vw;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 1vw;
+            padding-top: 10px;
+        }
+        .logo{
+            max-height: 40px;
+        }
+    } 
  </style>
+
+
 </head>
 <body>
     <header>
@@ -240,25 +778,22 @@
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto  fw-bold">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About Us</a>
+                            <a href="about.html" class="nav-link">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Permits</a>
+                            <a href="#" class="nav-link">POLICIES</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Accreditation</a>
+                            <a href="#" class="nav-link">CALIBRATION</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Policies</a>
+                            <a href="#" class="nav-link">PM & VALIDATION</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Calibration</a>
+                            <a href="#" class="nav-link">CONTACT US</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">PM and Validation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact Us</a>
+                            <a href="https://my-smcs.com/login" class="nav-link">CUSTOMER SERVICE</a>
                         </li>
                     </ul>
                 </div>
@@ -268,33 +803,90 @@
 
         <div class="title">
             <div class="background-image"></div>
-            <h1 class="divider line double-razor"><strong>About Us</strong></h1>
+            <h1 class="divider line double-razor"><strong>ABOUT US</strong></h1>
         </div>
-        
+
         <div class="div2">
-            <div class="intro">
-                <h2 class="in"><strong>Introduction</strong></h2>
-                <p>Southern Metrology and Calibration Services, Inc. is a reputable ISO/IEC 17025:2017 accredited calibration laboratory, located at Artica Building, National Highway corner Almazora Street, Canlalay, Binan City, Laguna. Established in 2015, we have quickly become a trusted name in the industry, offering comprehensive metrology and calibration services to customers across various sectors. As the calibration laboratory in the Philippines to be accredited by the Philippine Accreditation Bureau for ISO/IEC 17025:2017, we have a track record of delivering exceptional quality and accuracy. With our customer-centric approach, state-of-the-art facilities, and a highly knowledgeable staff, we guarantee top-notch performance and professional quality services.</p>
-            </div>       
+            <h2>Introduction</h2>
+            <p2>Southern Metrology and Calibration Services, Inc. is a reputable ISO/IEC 17025:2017 accredited calibration laboratory, located at Artica Building, National Highway corner Almazora Street, Canlalay, Binan City, Laguna. Established in 2015, we have quickly become a trusted name in the industry, offering comprehensive metrology and calibration services to customers across various sectors. As the calibration laboratory in the Philippines to be accredited by the Philippine Accreditation Bureau for ISO/IEC 17025:2017, we have a track record of delivering exceptional quality and accuracy. With our customer-centric approach, state-of-the-art facilities, and a highly knowledgeable staff, we guarantee top-notch performance and professional quality services.</p2>
+
+            <h2>Services</h2>
+            <p2>We specialize in providing precise and reliable metrology and calibration services tailored to the specific needs of our customers. With a wide scope of accreditation, we offer calibration services in diverse fields, including thermometry, hydrometry, mass, balances, force, pressure, torque, analytical, environmental, volume, dimensional, electrical, frequency, density, and viscosity. Our services ensure that your measurement procedures meet the highest quality standards, providing you with confidence and accuracy in your processes. </p2>
+
+            <h2>Facilities and Equipment</h2>
+            <p2>Southern Metrology and Calibration Services, Inc. is proud to possess the largest private laboratory facility in the country. With a spacious and well-equipped facility spanning a laboratory area of 1200 square meters across three floors, we have the capacity to handle calibration projects of any size and complexity. Our state-of-the-art laboratory is equipped with cutting-edge equipment, ensuring accurate and precise measurements across various calibration fields.</p2>
+
+            <h2>Personnel and Expertise</h2>
+            <p2>Our team comprises 90 highly skilled personnel who have undergone extensive training both domestically and abroad. They possess in-depth knowledge and expertise in their respective calibration fields. Our personnel have received training from prestigious institutions, including the National Metrology Institutes, and are recognized as experts and assessors of ISO/IEC 17025:2017. This ensures that our calibration services adhere to the highest industry standards. Additionally, our personnel undergo continuous training to stay updated with the latest advancements in metrology and calibration practices.</p2>
+
+            <h2>Accreditations and Compliance</h2>
+            <p2>We have gained recognition for our commitment to quality and compliance with regulatory bodies. As a calibration laboratory to receive accreditation from the Philippine Accreditation Bureau for ISO/IEC 17025:2017, we have set a benchmark for excellence in the industry. Our compliance with regulatory requirements ensures that our calibration services meet international standards and best practices. With a total of 15 approved signatories, we have a team of experts who oversee and certify the accuracy and reliability of our calibration processes.</p2>
+
+            <h2>Additional Services</h2>
+            <p2>In addition to our core calibration services, we offer additional services to support our customers' needs. These include training on management systems and calibration to enhance your understanding of industry standards and procedures. We also serve as a proficiency testing provider, enabling you to assess the competence and accuracy of your measurement processes. Furthermore, we provide inspection and certification services for advanced biosafety cabinets, fume hoods, microscopes, as well as thermal and relative humidity validation.</p2>
+
+            <h2>Turnaround Time and Logistics</h2>
+            <p2>At Southern Metrology and Calibration Services, Inc., we prioritize efficiency and customer satisfaction. We implement a turnaround time ranging from five (5) to fifteen (15) working days, depending on the complexity of the calibration task. Our efficient RECALL system ensures that you never miss a calibration deadline. Additionally, we provide comprehensive logistics support, including equipment collection, pick-up, and delivery services, to streamline the calibration process for our customers.</p2>
         </div>
-        <div class="div3">
-            <div class="main_container">
-                <img src="abg3.webp" class="image">
-                <div class="overlay">
-                    <p class="p1">We specialize in providing precise and reliable metrology and calibration services tailored to the specific needs of our customers. With a wide scope of accreditation, we offer calibration services in diverse fields, including thermometry, hydrometry, mass, balances, force, pressure, torque, analytical, environmental, volume, dimensional, electrical, frequency, density, and viscosity. Our services ensure that your measurement procedures meet the highest quality standards, providing you with confidence and accuracy in your processes.</p>
-                </div>
-            </div>
-        </div>
+
+
+        <div id="hero-carousel" class="carousel slide bg-light" data-bs-ride="carousel">
             
+            <!-- slide1 -->
+            <div class="carousel-inner">
+             <div class="carousel-indicators">
+                 <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 <button type="button" style="background-color: rgb(0, 0, 0);" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>
+              <div class="carousel-item active c-item">
+                
+                <div class="carousel" >
+                    <h2 class="h">Mission</h2>
+                    <t class="t">Strive to laboratory excellence and first choice in the Philippines.</t>
+                     
+                  </div>
+              </div>
+     
+     
+     
+             <!-- slide2 --> 
+              <div class="carousel-item c-item">
+                
+                <div class="carousel">
+                    <h2 class="h">Vision</h2>
+                    <t class="t">To be center of excellence and source of references to achieve long-term customers’ satisfaction by providing quality service in a timely manner.</t>
+                                         
+                  </div>
+              </div>
+     
+     
+     
+     
+              <!-- slide3 -->
+              <div class="carousel-item c-item">
+                
+                <div class="carousel">
+                    <h2 class="h">Value</h2>
+                    <t class="t">To serve our customers and associates through continuous improvement with sincerity, honesty and integrity.</t>
+                                    
+                  </div>
+              </div>
+            </div> 
+         </div>
 
 
 
-
+    
 
     <div class="footer">
-            <h3>Contact Us
+            <h3 class="con">Contact Us
                 <img src="logo.png" alt="Logo" class="logo d-inline-block align-text-top me-2 img-fluid bg-white">
+                <a href="https://www.facebook.com/profile.php?id=100093160215001&mibextid=JRoKGi">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </a>
             </h3>
+            
             <div class="separator">
                 <div id="separator-5435933ece" class="cmp-separator">
                     <hr class="cmp-separator__horizontal-rule">
@@ -315,11 +907,12 @@
         <div class="copyright">AN ISO/IEC 17025:2017 ACCREDITED CALIBRATION LABORATORY<br>Copyright ©  2018  All Rights Reserved. Southern Metrology and Calibration Services, Inc.</div>
         </div>
     
-   
+
 
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
